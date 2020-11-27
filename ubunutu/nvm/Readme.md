@@ -54,7 +54,7 @@ To install node.js in your system through nvm, you need to use nvm install node 
 nvm install node
 ```
 
-### Step 5 (LTS Version) through NVM
+## Step 5 (LTS Version) through NVM
 
 You can also install the latest Node version by using nvm install --lts command as shown below.
 
