@@ -70,5 +70,34 @@ If you want to check the installed node version, you can check by running node -
 node --version
 ```
 
+## Step 7: List all Installed NodeJs Versions
 
+To check all the currently installed versions of node, you can run nvm ls command. There is an arrow(->) showing in front of the release number which means currently this version is in use.
 
+```bash
+nvm ls
+```
+
+## Step 8: Switch to a different version.
+
+For example, if you want to switch to Version 13.6.0, then you need to run nvm use v13.6.0 command to switch your node version.
+
+``bash
+nvm use v13.6.0
+```
+
+## Step 9: Uninstall Version of NodeJs using NVM
+
+If you want to uninstall any particular version let’s say version 8.9, then you need to run nvm uninstall 8.9 command.
+
+```bash
+nvm uninstall 8.9
+```
+
+## Step 19: Update NodeJs using NVM
+
+If you want to update your node to the latest stable version, then you need to use nvm install stable command. In our case, since the latest version 13.6.0 is already installed in our system so it will show the latest version is already installed and hence no update is currently available to install.
+
+```bash
+nvm install stable
+```
