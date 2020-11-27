@@ -94,10 +94,17 @@ If you want to uninstall any particular version let’s say version 8.9, then yo
 nvm uninstall 8.9
 ```
 
-## Step 19: Update NodeJs using NVM
+## Step 9: Update NodeJs using NVM
 
 If you want to update your node to the latest stable version, then you need to use nvm install stable command. In our case, since the latest version 13.6.0 is already installed in our system so it will show the latest version is already installed and hence no update is currently available to install.
 
 ```bash
 nvm install stable
+```
+## Step 10:  Assign Default NodeJs Verion
+
+Example of setting default NodeJs version to 6.1.0
+
+```bash
+nvm alias default 6.1.0
 ```
