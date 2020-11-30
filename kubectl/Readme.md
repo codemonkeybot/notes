@@ -22,6 +22,9 @@ kubectl logs my-pod-instance my-pod --tail 100 -f
 #Execute a command on a container in a pod
 kubectl exec
 
+#Port Forwarding example 8080
+kubectl port-forward my-pod-instance 8080:8080
+
 # List Services Sorted by Name
 kubectl get services --sort-by=.metadata.name
 
