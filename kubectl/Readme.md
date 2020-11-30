@@ -19,10 +19,13 @@ kubectl describe pods my-pod
 # Tail 100 lines of Log Output from pod instance
 kubectl logs my-pod-instance my-pod --tail 100 -f
 
-#Execute a command on a container in a pod
+# Search Logs strings example - Invoked - Ready
+kubectl logs my-pod-instance | findstr Invoked | findstr Ready
+
+# Execute a command on a container in a pod
 kubectl exec
 
-#Port Forwarding example 8080
+# Port Forwarding example 8080
 kubectl port-forward my-pod-instance 8080:8080
 
 # List Services Sorted by Name
