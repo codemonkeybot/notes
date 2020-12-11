@@ -1,5 +1,12 @@
 # Docker CE
 
+### Docker Utility 
+
+```bash
+# Launch dockly utility in a container
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock lirantal/dockly
+```
+
 ### Docker stop with glob patterns
 
 ```bash
