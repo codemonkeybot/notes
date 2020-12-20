@@ -9,7 +9,7 @@ docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -e DOCKER_HOST=
 
 
 ```bash
-# Launch dockly utility in a container
+# Launch dockly utility in a container - Recommend dry over this implementation
 docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock lirantal/dockly
 ```
 
