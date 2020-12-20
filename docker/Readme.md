@@ -3,6 +3,12 @@
 ### Docker Utility 
 
 ```bash
+# Launch docker dry utility in a container - Dry is a terminal application to manage Docker and Docker Swarm.
+docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -e DOCKER_HOST=$DOCKER_HOST moncho/dry
+```
+
+
+```bash
 # Launch dockly utility in a container
 docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock lirantal/dockly
 ```
