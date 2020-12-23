@@ -1,5 +1,41 @@
 # Bash scripts
 
+## Read JSON using jq and Loop items 
+
+```
+#!/bin/sh
+echo "READ example.json"
+videos=`cat example.json`
+
+for row in $(echo "${videos}" | jq -r '.[] | @base64'); do
+    _jq() {
+        echo ${row} | base64 --decode | jq -r ${1}
+    }
+
+    echo $(_jq '.url')
+    echo $(_jq '.encoding')
+
+  done
+```
+
+### example.json File Example
+```
+[
+  {
+    "url": "https://www.youtube.com/watch?v=EKkzbbLYPuI",
+    "encoding": "mp4"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=jvipPYFebWc",
+    "encoding": "mp4"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=oQrIbBqV2Ew",
+    "encoding": "mp4"
+  }
+]
+```
+
 ## Find and remove `node_modules` folder recursively 
 
 ```
